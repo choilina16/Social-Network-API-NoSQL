@@ -1,7 +1,7 @@
-// Activity  as reference!
+// Activity 22 as reference!
 
-// Require schema and types from mongoose
-const { Schema, Types } = require('mongoose');
+// Require schema and model from mongoose
+const { Schema, model } = require('mongoose');
 
 // Construct a new instance of the schema class
 const userSchema = new Schema(
@@ -17,8 +17,9 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       // https://www.codegrepper.com/code-examples/whatever/mongoose+validate+match+regex
-      validate: [validateEmail, 'PLease fill a valid email address'],
+      validate: [validateEmail, 'Please fill a valid email address'],
     },
+    // array of _id values referencing the Thought model
     thoughts: [
       {
         type: Schema.Types.ObjectId,
@@ -37,8 +38,16 @@ const userSchema = new Schema(
     toJSON: {
       getters: true,
     },
-    id: false,
+    // id: false,
   }
 );
 
-module.exports = userSchema;
+// Create a virtual called friendCount that retrieves the length of the user's friends array field on query.
+userSchema.virtual('friendCount').get(function () {
+  return this.friend.length;
+});
+
+// Initialize our User model
+const User = model('user', userSchema);
+
+module.exports = User;
