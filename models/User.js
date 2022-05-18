@@ -20,7 +20,7 @@ const userSchema = new Schema(
       validate: [validateEmail, 'Please fill a valid email address'],
     },
     // array of _id values referencing the Thought model
-    thoughts: [
+    thought: [
       {
         type: Schema.Types.ObjectId,
         ref: 'Thought',

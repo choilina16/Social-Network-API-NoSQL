@@ -1,6 +1,6 @@
-// Using activity 25 as a reference!
+// Using activity 25 & 28 Mini Project as a reference!
 
-const User = require('../../models/User');
+const { User, Thought } = require('../../models');
 
 module.exports = {
   // get all users
@@ -57,6 +57,7 @@ module.exports = {
       });
   },
   // delete to remove user by its id
+  // **BONUS**: Remove a user's associated thoughts when deleted.
   deleteUser(req, res) {
     User.findOneAndRemove({ _id: req.params.userId })
       .then((user) =>
@@ -64,9 +65,7 @@ module.exports = {
           ? res.status(400).json({
               message: 'There is no user with that ID, please try again!',
             })
-          : res.json({
-              message: 'User successfully deleted!',
-            })
+          : Thought.deleteMany({ _id: { $in: user.Thought } })
       )
       .catch((err) => {
         console.log(err);
@@ -74,5 +73,3 @@ module.exports = {
       });
   },
 };
-
-// **BONUS**: Remove a user's associated thoughts when deleted.
