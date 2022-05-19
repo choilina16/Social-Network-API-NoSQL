@@ -3,6 +3,12 @@
 // Require schema and model from mongoose
 const { Schema, model } = require('mongoose');
 
+// https://itecnote.com/tecnote/node-js-mongoose-validate-email-syntax/
+const validateEmail = function (email) {
+  const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return re.test(email);
+};
+
 // Construct a new instance of the schema class
 const userSchema = new Schema(
   {
@@ -38,13 +44,13 @@ const userSchema = new Schema(
     toJSON: {
       getters: true,
     },
-    // id: false,
+    id: false,
   }
 );
 
 // Create a virtual called friendCount that retrieves the length of the user's friends array field on query.
 userSchema.virtual('friendCount').get(function () {
-  return this.friend.length;
+  return this.friends.length;
 });
 
 // Initialize our User model
