@@ -38,9 +38,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ```
 
 ## Visuals
-[Link to video walkthrough](https://drive.google.com/file/d/1QHrW5BzeIiCqbbiO5pOujotGx3O3dOCY/view?usp=sharing)
-https://user-images.githubusercontent.com/100983245/169197632-d82fcd38-2ff8-4bb5-897f-30febb1f7b16.mp4
-
+https://user-images.githubusercontent.com/100983245/169197701-38841be7-1660-477b-ba07-3db04de47859.mp4
 
 ## Installation Instructions
 `npm i` to install
