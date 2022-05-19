@@ -37,6 +37,9 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ```
 
+## Visuals
+[Link to video walkthrough](https://drive.google.com/file/d/1QHrW5BzeIiCqbbiO5pOujotGx3O3dOCY/view?usp=sharing)
+
 ##Installation Instructions
 `npm i` to install
 `node index.js` to start 
