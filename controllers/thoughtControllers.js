@@ -44,6 +44,7 @@ module.exports = {
   // PUT to update a thought by its _id
   updateThought(req, res) {
     console.log('You are updating a new thought');
+    console.log(req.body);
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $set: req.body },
