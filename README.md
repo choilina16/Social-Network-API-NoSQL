@@ -42,7 +42,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 `node index.js` to start 
 
 ## Visuals
-https://user-images.githubusercontent.com/100983245/169195892-9b418c48-2853-4ba1-98ae-0cdc5a034ee2.mp4
+
 
 ## Github Repository 
 [Github Repository](https://github.com/choilina16/Social-Network-API-NoSQL)
