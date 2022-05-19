@@ -41,9 +41,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 `npm i` to install
 `node index.js` to start 
 
-## Visuals
-
-
 ## Github Repository 
 [Github Repository](https://github.com/choilina16/Social-Network-API-NoSQL)
 
