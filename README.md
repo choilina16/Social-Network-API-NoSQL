@@ -36,13 +36,15 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ```
 
+## Visuals
+https://user-images.githubusercontent.com/100983245/169197701-38841be7-1660-477b-ba07-3db04de47859.mp4
+
 ## Installation Instructions
 `npm i` to install
 `node index.js` to start 
 
 ## Github Repository 
-[Github Repository](https://github.com/choilina16/book-search-engine)
-[Heroku Deployment](https://sheltered-reef-19358.herokuapp.com/)
+[Github Repository](https://github.com/choilina16/Social-Network-API-NoSQL)
 
 ## Acknowledgments 
 Showing appreciation to our study group! 
