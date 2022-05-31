@@ -6,9 +6,8 @@
 1. [Objective](#objective)
 2. [Acceptance Criteria](#acceptance-criteria)
 3. [Installation Instructions](#installation-instructions)
-4. [Visuals](#visuals)
-5. [Github Repository](#github-repository)
-6. [Acknowledgments](#acknowledgments)
+4. [Github Repository](#github-repository)
+5. [Acknowledgments](#acknowledgments)
 
 ## Objective 
 Build an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list by using the following:
@@ -37,15 +36,13 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ```
 
-## Visuals
-https://user-images.githubusercontent.com/100983245/169197701-38841be7-1660-477b-ba07-3db04de47859.mp4
-
 ## Installation Instructions
 `npm i` to install
 `node index.js` to start 
 
 ## Github Repository 
-[Github Repository](https://github.com/choilina16/Social-Network-API-NoSQL)
+[Github Repository](https://github.com/choilina16/book-search-engine)
+[Heroku Deployment](https://sheltered-reef-19358.herokuapp.com/)
 
 ## Acknowledgments 
 Showing appreciation to our study group! 
